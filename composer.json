@@ -1,0 +1,18 @@
+{
+    "name": "m.labinskyi/test",
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Nikolay Labinskiy",
+            "email": "e-moe@ukr.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Test": "src/"
+        }
+    },
+}

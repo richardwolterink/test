@@ -1,5 +1,9 @@
 <?php
 
+namespace Test;
+
+class DwdUtils
+{
     /**
      * Get string excerpt.
      *
@@ -9,7 +13,7 @@
      *
      * @return string
      */
-    function excerpt($str, $length = 25, $trailing = '…')
+    public static function excerpt($str, $length = 25, $trailing = '…')
     {
         if (mb_strlen($str) > $length) {
             // string exceeded length, truncate and add trailing
@@ -24,8 +28,4 @@
         return $str;
     }
 
-
-
-echo excerpt('Lorem Ipsum is simply dummy text of the printing and typesetting industry.'), PHP_EOL;
-echo excerpt('Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 100), PHP_EOL;
-echo excerpt('Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 5), PHP_EOL;
+}
